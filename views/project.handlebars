@@ -1,4 +1,4 @@
-{{!-- Include the main layout --}}
+{{!-- Include the main layout
 {{> main}}
 
 {{!-- Content for a specific blog post --}}
@@ -30,4 +30,14 @@
   {{else}}
     <p>No comments yet.</p>
   {{/each}}
-</section>
+</section> --}}
+<!-- Post Details -->
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+
+  <!-- Button to add comments -->
+  <button class="btn btn-primary">Comment on this post</button>
+  </p>
+</div>

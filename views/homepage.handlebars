@@ -1,9 +1,8 @@
-{{!-- Include the main layout --}}
-{{> main}}
+{{!< layouts/main}}
 
 {{!-- Content for the homepage --}}
 <section>
-  <h1>Welcome to the CMS-style Blog Site!</h1>
+  <h1>Welcome to the TechBlog Site!</h1>
 
   {{!-- Display existing blog posts --}}
   {{#each blogPosts}}
@@ -15,6 +14,32 @@
       <a href="/post/{{id}}">Read More</a>
     </article>
   {{else}}
-    <p>No blog posts found.</p>
+    <p>No posts found.</p>
   {{/each}}
 </section>
+
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+  <div class="card">
+{{!--create a card element with a header, body, and footer. The content within the card is populated with data from the project object. --}}
+    <div class="card-header"> 
+      <h2>
+        <a class="home-header" href="/project/{{project.id}}">{{project.name}}</a>
+      </h2>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p class="card-text">{{project.description}}</p>
+        <div class="col text-center">
+          <button type="button" class="btn btn-secondary more-button"><a href="/project/{{project.id}}"> Click Here for More</a></button>
+        </div>
+        <footer class="blockquote-footer">Posted on {{format_date project.date_created}}
+          <div>
+            <cite title="Source Title">Author {{project.user.name}}</cite>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+{{/each}}
+

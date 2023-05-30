@@ -1,0 +1,78 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color */
+body {
+  background-color: lightgreen;
+}
+
+/* Set the font color */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: black;
+}
+
+/* Set the header styles */
+header {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-a {
+  color: black;
+  margin-right: 10px;
+}
+
+/* Set the branding and logo styles */
+.row {
+  background-color: lightgreen;
+  padding: 10px;
+  margin-left: 3px;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Set the main content styles */
+main {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* Set the footer styles */
+footer {
+  background-color: lightgreen;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: black;
+}
