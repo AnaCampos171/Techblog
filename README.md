@@ -21,4 +21,5 @@ N/A
 https://github.com/AnaCampos171/Techblog
 
 ## Link to deployed app:
+https://immense-castle-86692.herokuapp.com/
 
