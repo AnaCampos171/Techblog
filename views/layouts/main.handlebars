@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS-style Blog Site</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  {{!-- Header --}}
+  <header>
+    <h1>CMS-style Blog Site</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        {{#if isAuthenticated}}
+          <li><a href="/logout">Logout</a></li>
+        {{else}}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+  </header>
+
+  {{!-- Main content --}}
+  <main>
+    {{{body}}}
+  </main>
+
+  {{!-- Footer --}}
+  <footer>
+    <p>&copy; 2023 CMS-style Blog Site</p>
+  </footer>
+</body>
+
+</html>

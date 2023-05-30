@@ -1,0 +1,20 @@
+{{!-- Include the main layout --}}
+{{> main}}
+
+{{!-- Content for the homepage --}}
+<section>
+  <h1>Welcome to the CMS-style Blog Site!</h1>
+
+  {{!-- Display existing blog posts --}}
+  {{#each blogPosts}}
+    <article>
+      <h2>{{title}}</h2>
+      <p>{{date}}</p>
+      <p>{{content}}</p>
+      <p>Created by: {{username}}</p>
+      <a href="/post/{{id}}">Read More</a>
+    </article>
+  {{else}}
+    <p>No blog posts found.</p>
+  {{/each}}
+</section>

@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Project A",
+      "description": "This is Project A. It involves building a web application for task management."
+    },
+    {
+      "id": 2,
+      "name": "Project B",
+      "description": "Project B is an e-commerce website development proje"
+    },
+    {
+      "id": 3,
+      "name": "Project C",
+      "description": "Project C focuses on creating a mobile app for social networking."
+    }
+  ]
+  

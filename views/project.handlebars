@@ -1,0 +1,33 @@
+{{!-- Include the main layout --}}
+{{> main}}
+
+{{!-- Content for a specific blog post --}}
+<section>
+  <h1>{{title}}</h1>
+  <p>{{date}}</p>
+  <p>{{content}}</p>
+  <p>Created by: {{username}}</p>
+
+  {{!-- Comments section --}}
+  {{#if isAuthenticated}}
+    <form action="/post/{{id}}/comment" method="POST">
+      <label for="comment">Leave a comment</label>
+      <textarea id="comment" name="comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  {{else}}
+    <p>Please <a href="/login">login</a> to leave a comment.</p>
+  {{/if}}
+
+  {{!-- Display existing comments --}}
+  <h2>Comments</h2>
+  {{#each comments}}
+    <div>
+      <p>{{comment}}</p>
+      <p>Created by: {{username}}</p>
+      <p>{{date}}</p>
+    </div>
+  {{else}}
+    <p>No comments yet.</p>
+  {{/each}}
+</section>
