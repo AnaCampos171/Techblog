@@ -1,29 +1,23 @@
 # Tech Blog
-MUST UPDATE FOR THIS NEW PROJECT
 
 ## Description
-
-This is a command-line application that will manage a company's employee database.
+This is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
 ## Installation
 
-App uses Node.js, Inquirer, and MySQL2-- npm i, then node index.js to run app.
+App uses packages: express-handlebars, mysql2sequelize, dotenv, bycrypt, express-session,connect-session-sequelize ( npm i) 
 
 ## Usage
-- User is presented with a CLI app that accepts user input when running node index.js.
-- When the user starts the application, they are presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-- User can view or update the information, and the new information inputed will be updated in the database.
+The CMS-style blog site allows you to create, manage, and share blog posts. When you visit the site, you'll see the homepage with existing posts, navigation links, and a login option. You can navigate to the homepage or sign up/sign in. After signing up, you can log in and access the homepage, view and comment on posts. The dashboard lets you manage your posts, add new ones, and update or delete existing ones. You can also log out or be prompted to log in again after being idle for a while
 
  App functionality will resemble this image:
 
- ![Alt text](images/CLI.png)
+ ![Alt text](Techblog.png)
  
-## Credits
-Many Thanks to the UCR Coding Bootcamp Academic team and my wonderful classmates for supporting me through my coding journey!
 ## License
 N/A
 ## Link to github repository:
-https://github.com/AnaCampos171/Employee_Tracker
+https://github.com/AnaCampos171/Techblog
 
-## Link to a video walkthrough demonstrating app functionality: 
-https://drive.google.com/file/d/1XF3tqgQyVMsncW1_ed4DfbLybpfeTjMp/view
+## Link to deployed app:
+
